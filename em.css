@@ -1,0 +1,45 @@
+
+    body {
+      font-size: 16px; /* Base fija para todo el body */
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .caja {
+      font-size: 1.25em; 
+      /* 1.25 × 16px = 20px */
+      border: 2px solid steelblue;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .caja h2 {
+      font-size: 2em; 
+      /* 2 × 20px = 40px 
+         porque se multiplica sobre el font-size del padre (.caja) */
+      color: darkred;
+    }
+
+    .caja p {
+      font-size: 1em; 
+      /* 1 × 20px = 20px 
+         se hereda del padre (.caja) que ya vale 20px */
+      color: darkblue;
+    }
+
+    .caja .subcaja {
+      font-size: 0.8em; 
+      /* 0.8 × 20px = 16px
+         porque depende de .caja */
+      border: 1px dashed gray;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .caja .subcaja p {
+      font-size: 1.5em; 
+      /* 1.5 × 16px = 24px
+         porque ahora depende de la subcaja, no de body */
+      color: darkgreen;
+    }
+  

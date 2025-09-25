@@ -1,0 +1,22 @@
+
+
+    html{
+        font-size: 16px; /* Tamaño base para rem, si cambia, cambia todo */
+        /* por defecto el navegador viene configurado apaa 16px */
+    }
+
+    h1 {
+      font-size: 2rem; /* 2 × 16px = 32px */
+      color: green;
+    }
+    
+
+    p {
+      font-size: 1rem; /* 1 × 16px = 16px */
+      color: darkblue;
+    }
+
+    .small-text {
+      font-size: 0.75rem; /* 0.75 × 16px = 12px */
+      color: darkgreen;
+    }
